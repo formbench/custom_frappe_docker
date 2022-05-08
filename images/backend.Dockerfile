@@ -9,4 +9,4 @@ USER root
 
 RUN install-app frappe_s3_attachment
 
-USER frappe
+# USER frappe
