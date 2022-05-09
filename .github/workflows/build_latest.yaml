@@ -41,7 +41,7 @@ jobs:
 
       - name: Get Version
         id: get-version
-        run: echo "::set-output name=VERSION::${ERPNEXT_VERSION}"
+        run: echo "::set-output name=VERSION::${ERPNEXT_VERSION#*/}"
 
       - name: Get Repo
         id: get-repo
