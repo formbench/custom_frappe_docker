@@ -3,7 +3,7 @@
 ARG FRAPPE_VERSION
 ARG ERPNEXT_VERSION
 
-FROM frappe/assets-builder:${FRAPPE_VERSION} as assets
+# FROM frappe/assets-builder:${FRAPPE_VERSION} as assets
 
 # COPY repos apps
 
@@ -11,4 +11,4 @@ FROM frappe/assets-builder:${FRAPPE_VERSION} as assets
 
 FROM frappe/erpnext-nginx:${ERPNEXT_VERSION}
 
-COPY --from=assets /out /usr/share/nginx/html
+#COPY --from=assets /out /usr/share/nginx/html
