@@ -4,7 +4,7 @@
       "path": "."
     },
     {
-      "path": "../erpnext-gitops"
+      "path": "../erpnext"
     }
   ],
   "settings": {}
