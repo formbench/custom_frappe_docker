@@ -39,6 +39,10 @@ jobs:
           echo "::set-output name=FRAPPE_VERSION::$(jq -r .frappe base_versions.json)"
           echo "::set-output name=ERPNEXT_VERSION::$(jq -r .erpnext base_versions.json)"
 
+      - name: Get Version
+        id: get-version
+        run: echo "::set-output name=VERSION::${ERPNEXT_VERSION}"
+
       - name: Get Repo
         id: get-repo
         run: echo "::set-output name=REPOSITORY::${GITHUB_REPOSITORY#*/}"
