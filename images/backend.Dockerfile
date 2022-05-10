@@ -3,10 +3,10 @@
 ARG ERPNEXT_VERSION
 FROM frappe/erpnext-worker:${ERPNEXT_VERSION}
 
-# COPY repos ../apps
+COPY repos ../apps
 
-# USER root
+USER root
 
-# RUN install-app frappe_s3_attachment
+RUN install-app frappe_s3_attachment
 
-# USER frappe
+USER frappe
