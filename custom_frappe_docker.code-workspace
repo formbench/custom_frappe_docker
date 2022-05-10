@@ -5,6 +5,9 @@
     },
     {
       "path": "../erpnext"
+    },
+    {
+      "path": "../frappe-attachments-s3"
     }
   ],
   "settings": {}

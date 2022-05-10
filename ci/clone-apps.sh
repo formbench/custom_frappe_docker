@@ -18,4 +18,4 @@
 
 # Following are public repositories.
 
-git clone --depth 1 --branch master https://github.com/scg-wedo/frappe-attachments-s3 repos/frappe_s3_attachment
+git clone --depth 1 --branch master https://github.com/stackexpress-jawed/frappe-attachments-s3 repos/frappe_s3_attachment
