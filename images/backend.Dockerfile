@@ -7,8 +7,7 @@ COPY repos ../apps
 
 USER root
 
-RUN apt-get update
-RUN apt-get install libmagic1
+RUN apt-get update && apt-get install -y libmagic1 && rm -rf /var/lib/apt/lists/*
 RUN install-app frappe_s3_attachment
 
 USER frappe
