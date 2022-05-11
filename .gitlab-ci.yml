@@ -52,7 +52,7 @@ build_version:
     - ./ci/clone-apps.sh
     - export FRAPPE_VERSION=$(jq -r .frappe base_versions.json)
     - export ERPNEXT_VERSION=$(jq -r .erpnext base_versions.json)
-    - export VERSION=$(cat version.txt)
+    - export VERSION=$(jq -r .erpnext base_versions.json)
     - export REGISTRY_NAME=${CI_REGISTRY}/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}
     - export BACKEND_IMAGE_NAME=worker
     - export FRONTEND_IMAGE_NAME=nginx
