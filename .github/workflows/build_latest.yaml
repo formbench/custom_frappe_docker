@@ -53,6 +53,6 @@ jobs:
           FRAPPE_VERSION: ${{ steps.get-base-versions.outputs.FRAPPE_VERSION }}
           ERPNEXT_VERSION: ${{ steps.get-base-versions.outputs.ERPNEXT_VERSION }}
           REGISTRY_NAME: ghcr.io/${{ github.repository_owner }}
-          VERSION: ${{ steps.get-base-versions.outputs.ERPNEXT_VERSION }}
+          VERSION: latest
           BACKEND_IMAGE_NAME: ${{ steps.get-repo.outputs.REPOSITORY }}/worker
           FRONTEND_IMAGE_NAME: ${{ steps.get-repo.outputs.REPOSITORY }}/nginx
