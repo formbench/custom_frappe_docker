@@ -4,7 +4,7 @@
       "path": "."
     },
     {
-      "path": "../erpnext"
+      "path": "../frappe-build-scripts"
     },
     {
       "path": "../frappe-attachments-s3"
