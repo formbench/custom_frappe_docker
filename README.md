@@ -4,7 +4,7 @@
 - Fork this repo to build your own image with ERPNext and list of custom Frappe apps.
 - Change the `frappe` and `erpnext` versions in `base_versions.json` to use them as base. These values correspond to tags and branch names on the github frappe and erpnext repo. e.g. `version-13`, `v13.25.1`
 - Change `ci/clone-apps.sh` script to clone your private and public apps. Read comments in the file to update it as per need. This repo will install following apps:
-  - https://github.com/filtersource/frappe-attachments-s3
+  - https://github.com/formbench/frappe-attachments-s3
 - Change `images/backend.Dockerfile` to copy and install required apps with `install-app`.
 - Change `images/frontend.Dockerfile` to copy and install required apps with `install-app`.
 - Change `docker-bake.hcl` for builds as per need.

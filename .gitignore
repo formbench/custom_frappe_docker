@@ -1,3 +1,4 @@
 .env
 repos
+*.code-workspace
 .DS_Store
