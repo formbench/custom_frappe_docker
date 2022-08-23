@@ -7,7 +7,7 @@ FROM frappe/assets-builder:${FRAPPE_VERSION} as assets
 
 COPY repos apps
 
-# RUN install-app frappe_s3_attachment
+RUN install-app frappe_s3_attachment
 
 FROM frappe/erpnext-nginx:${ERPNEXT_VERSION}
 

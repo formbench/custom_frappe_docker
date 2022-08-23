@@ -10,7 +10,9 @@ USER root
 RUN apt-get update && apt-get install -y \
     libmagic-dev \
     nano \
-    && rm -rf /var/lib/apt/lists/*
-# RUN install-app frappe_s3_attachment
+    yarn \
+    && rm -rf /var/lib/apt/lists/* \
+    && yarn install -g sass
+RUN install-app frappe_s3_attachment
 
 USER frappe
