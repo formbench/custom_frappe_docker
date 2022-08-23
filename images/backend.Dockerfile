@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     nano \
     yarn \
     && rm -rf /var/lib/apt/lists/* \
-    && yarn install -g sass
+    && yarn global add sass
 RUN install-app frappe_s3_attachment
 
 USER frappe
